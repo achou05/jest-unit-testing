@@ -1,4 +1,4 @@
-import mut from './module.js'; // MUT = Module Under Test
+import mut from './module.js';
 
 test('sum adds numbers correctly', () => {
   const got = mut.sum(10, 5);
@@ -23,7 +23,6 @@ test('div handles negative numbers', () => {
   expect(got).toBe(expected);
 });
 
-// ----- containsNumbers() -----
 test('containsNumbers returns true if text contains a number', () => {
   const got = mut.containsNumbers('Hello123');
   expect(got).toBe(true);
